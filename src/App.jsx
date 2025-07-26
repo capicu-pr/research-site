@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Research from "./pages/Research";
-import ResearchTeam from "./pages/ResearchTeam";
-import ResearchCollaborate from "./pages/ResearchCollaborate";
-import ResearchAchievements from "./pages/ResearchAchievements";
+import ResearchFooter from "./components/ResearchFooter";
 import "./App.css";
 
 export default function App() {
@@ -12,11 +10,9 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Research />} />
-            <Route path="/team" element={<ResearchTeam />} />
-            <Route path="/collaborate" element={<ResearchCollaborate />} />
-            <Route path="/achievements" element={<ResearchAchievements />} />
           </Routes>
         </main>
+        <ResearchFooter />
       </div>
     </BrowserRouter>
   );
